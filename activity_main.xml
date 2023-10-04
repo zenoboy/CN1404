@@ -1,61 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="0dp"
+    android:visibility="visible">
 
-    <!-- Tiêu đề -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Đăng ký tài khoản"
-        android:textSize="24sp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="24dp" />
-
-    <!-- Trường nhập tên -->
-    <EditText
-        android:id="@+id/editTextName"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Tên của bạn"
-        android:layout_marginBottom="16dp" />
+        android:orientation="horizontal">
 
-    <!-- Trường nhập email -->
-    <EditText
-        android:id="@+id/editTextEmail"
+        <TextView
+            android:layout_width="411dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="0dp"
+            android:background="@android:color/holo_orange_dark"
+            android:gravity="center"
+            android:text="Danh mục đồ ăn"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        android:layout_marginBottom="16dp" />
-
-    <!-- Trường nhập mật khẩu -->
-    <EditText
-        android:id="@+id/editTextPassword"
+        android:orientation="horizontal">
+    <SearchView
+        android:id="@+id/searchView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Mật khẩu"
-        android:inputType="textPassword"
-        android:layout_marginBottom="16dp" />
+        android:layout_height="wrap_content" />
+    </LinearLayout>
 
-    <!-- Nút đăng ký -->
-    <Button
-        android:id="@+id/buttonRegister"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Đăng ký"
-        android:layout_marginBottom="16dp" />
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
 
-    <!-- Link đăng nhập -->
-    <TextView
+        <Button
+            android:id="@+id/BanhNgot"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Bánh Ngọt"
+            android:layout_marginRight="15dp"/>
+
+        <Button
+            android:id="@+id/Xoi"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:text="Xôi Chè" />
+        <Button
+            android:id="@+id/Oc"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="ỐC"
+            android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Đã có tài khoản? Đăng nhập ngay!"
-        android:textColor="@android:color/holo_blue_dark"
-        android:gravity="center"
-        android:layout_marginTop="16dp" />
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
 
+        <Button
+            android:id="@+id/DoChay"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Đồ Chay"
+            android:layout_marginRight="15dp"/>
+
+        <Button
+            android:id="@+id/Haisan"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:text="Hải Sản" />
+        <Button
+            android:id="@+id/Monnhau"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Món Nhậu"
+            android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/Kem"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Kem"
+            android:layout_marginRight="15dp"/>
+
+        <Button
+            android:id="@+id/NuongLau"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:text="Nướng Lẩu" />
+        <Button
+            android:id="@+id/BunMien"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Bún Miến"
+            android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/ThitVit"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Thịt Vịt"
+            android:layout_marginRight="15dp"/>
+
+        <Button
+            android:id="@+id/ThitBo"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:text="Thịt Bò" />
+        <Button
+            android:id="@+id/ThitHeo"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Thịt Heo"
+            android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/ThitGa"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Thịt Gà"
+            android:layout_marginRight="15dp"/>
+
+        <Button
+            android:id="@+id/Han"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:text="Món Hàn" />
+        <Button
+            android:id="@+id/Nhat"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Món NHật"
+            android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/Trung"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:text="Món Trung" />
+
+        <Button
+            android:id="@+id/AuMy"
+            android:layout_width="122dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:text="Món Âu Mỹ" />
+        <Button
+            android:id="@+id/Viet"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Món Việt"
+            android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
 </LinearLayout>
+
