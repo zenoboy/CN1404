@@ -1,119 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_collapseMode="pin"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        />
-    <menu xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto">
-        <item
-            android:id="@+id/action_search"
-            android:title="Tìm kiếm"
-            app:actionViewClass="androidx.appcompat.widget.SearchView"
-            app:showAsAction="ifRoom|collapseActionView" />
-    </menu>
+        app:title="Hôm nay bạn muốn ăn gì?" />
 
 
-    <!-- Thanh tìm kiếm -->
 
-    <!-- Danh sách các mục -->
-<!--    <GridView-->
-<!--        android:id="@+id/gridView"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:columnWidth="100dp"-->
-<!--        android:numColumns="2"-->
-<!--        android:padding="16dp"/>-->
-
-<!--    <application-->
-<!--        android:allowBackup="true"-->
-<!--        android:icon="@mipmap/ic_launcher"-->
-<!--        android:label="@string/app_name"-->
-<!--        android:roundIcon="@mipmap/ic_launcher_round"-->
-<!--        android:supportsRtl="true"-->
-<!--        android:theme="@style/AppTheme">-->
-<!--        <activity-->
-<!--            android:name=".MainActivity"-->
-<!--            android:label="@string/myactivityname" >-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
-<!--    </application>-->
-
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:iconifiedByDefault="false"
-        android:queryHint="Tìm kiếm..." />
 
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        >
+        android:layout_margin="16dp">
+
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="343dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
+                android:layout_gravity="center"
                 android:drawablePadding="15dp"
-                android:text="@string/kh_i_v"></androidx.appcompat.widget.AppCompatButton>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+                android:text="Khai vị" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/m_n_ch_nh" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Tráng miệng" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Đồ Uống" />
 
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"   >
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"    >
-
-        </LinearLayout>
-
-
-
     </androidx.cardview.widget.CardView>
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="343dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/m_n_ch_nh"></androidx.appcompat.widget.AppCompatButton>
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="343dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Tráng miệng" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="343dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Đồ UỐng">
-
-    </androidx.appcompat.widget.AppCompatButton>
 
 
 </LinearLayout>
