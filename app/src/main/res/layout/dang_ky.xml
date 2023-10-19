@@ -4,22 +4,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@drawable/hinhnen">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Đăng ký tài khoản"
-        android:textSize="24sp"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
         android:layout_gravity="center"
-        android:layout_marginBottom="24dp" />
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="55dp"/>
 
     <!-- Trường nhập tên -->
     <EditText
         android:id="@+id/editTextName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Tên của bạn"
+        android:text="Tên của bạn"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         android:layout_marginBottom="16dp" />
 
     <!-- Trường nhập email -->
@@ -27,7 +32,9 @@
         android:id="@+id/editTextEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"
+        android:text="Email"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
         android:inputType="textEmailAddress"
         android:layout_marginBottom="16dp" />
 
@@ -36,8 +43,10 @@
         android:id="@+id/editTextPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Mật khẩu"
-        android:inputType="textPassword"
+        android:text="Mật khẩu"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:inputType="text"
         android:layout_marginBottom="16dp" />
     <!-- Nút đăng ký -->
     <Button
@@ -45,6 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Đăng ký"
+        android:textSize="20sp"
         android:layout_marginBottom="16dp" />
 
     <!-- Link đăng nhập -->
@@ -52,8 +62,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Đã có tài khoản? Đăng nhập ngay!"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="#FFFFFF"
         android:gravity="center"
+        android:textSize="17sp"
         android:layout_marginTop="16dp" />
 
 
