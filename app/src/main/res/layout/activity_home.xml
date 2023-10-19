@@ -32,35 +32,42 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="match_parent"
-                android:layout_height="179dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center"
                 android:background="@drawable/khaivi"
-                android:text="Khai vị"
+                android:text="MÓN Khai vị"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp"/>
+                android:textSize="30sp"
+                android:layout_marginBottom="12dp"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="match_parent"
-                android:layout_height="134dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center"
                 android:background="@drawable/chinh"
-                android:text="@string/m_n_ch_nh"
-                android:textColor="#FFFFFF" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Tráng miệng"
+                android:text="MÓN CHÍNH"
                 android:textColor="#FFFFFF"
-                android:background="@drawable/chinh"/>
+                android:textSize="30sp"
+                android:layout_marginBottom="12dp"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="150dp"
                 android:layout_gravity="center"
-                android:text="Đồ Uống"
-                android:textColor="#FFFFFF"/>
+                android:background="@drawable/trangmieng"
+                android:text="MÓN Tráng miệng"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:layout_marginBottom="12dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:text="Đồ Uống - GIẢI KHÁT"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:background="@drawable/douong"/>
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
