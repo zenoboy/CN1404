@@ -12,10 +12,10 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        app:layout_collapseMode="pin"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:title="Hôm nay bạn muốn ăn gì?" />
+        android:background="#FF6B62"
+        app:title="Hôm nay bạn muốn ăn gì?"
+
+        />
 
 
 
@@ -32,27 +32,35 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="179dp"
                 android:layout_gravity="center"
-                android:drawablePadding="15dp"
-                android:text="Khai vị" />
+                android:background="@drawable/khaivi"
+                android:text="Khai vị"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"/>
+
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="134dp"
                 android:layout_gravity="center"
-                android:text="@string/m_n_ch_nh" />
+                android:background="@drawable/chinh"
+                android:text="@string/m_n_ch_nh"
+                android:textColor="#FFFFFF" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Tráng miệng" />
+                android:text="Tráng miệng"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/chinh"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Đồ Uống" />
+                android:text="Đồ Uống"
+                android:textColor="#FFFFFF"/>
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
