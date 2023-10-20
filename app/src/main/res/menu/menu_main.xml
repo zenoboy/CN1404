@@ -21,8 +21,22 @@
         />
     <group android:checkableBehavior="single">
         <item
-            android:id=""
-            >
+            android:id="@+id/nav_yeuthich"
+            android:icon="@drawable/heart"
+            android:title="Yêu thích">
+
+        </item>
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/share"
+            android:title="chia sẻ">
+
+        </item>
+
+        <item
+            android:id="@+id/nav_dieukhoan"
+            android:icon="@drawable/warning"
+            android:title="Điều Khoản">
 
         </item>
     </group>
