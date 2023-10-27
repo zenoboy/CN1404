@@ -49,6 +49,15 @@
         android:inputType="text"
         android:layout_marginBottom="16dp" />
     <!-- Nút đăng ký -->
+    <EditText
+        android:id="@+id/editReTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập lại mật khẩu"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:inputType="text"
+        android:layout_marginBottom="16dp" />
     <Button
         android:id="@+id/buttonRegister"
         android:layout_width="match_parent"
