@@ -15,6 +15,15 @@
         app:menu="@menu/menu_main"
         android:layout_gravity="start"/>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+
+    </ScrollView>
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -23,10 +32,6 @@
         app:title="Hôm nay bạn muốn ăn gì?"
 
         />
-
-
-
-
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
