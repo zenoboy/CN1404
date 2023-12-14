@@ -20,6 +20,7 @@
         app:showAsAction="always"
         />
     <group android:checkableBehavior="single">
+
         <item
             android:id="@+id/nav_yeuthich"
             android:icon="@drawable/heart"

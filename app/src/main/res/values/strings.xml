@@ -3,4 +3,7 @@
 
     <string name="kh_i_v">Khai vị</string>
     <string name="m_n_ch_nh">Món chính</string>
+    <string name="navigation_drawer_open">Open navigition drawer</string>
+    <string name="navigation_drawer_close">Close navigition drawer</string>
+    <string name="navi"></string>
 </resources>
