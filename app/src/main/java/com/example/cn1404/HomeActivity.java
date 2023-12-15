@@ -35,7 +35,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        navigationView.bringChildToFront();
+        navigationView.bringToFront();
         ActionBarDrawerToggle toggle =new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
@@ -88,10 +88,10 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         }
         if (id == R.id.action_keypad) {
 
-            // Xử lý khi biểu tượng "keypad" được nhấn
-//            AlertDialog.Builder alerDialog= new AlertDialog.Builder(HomeActivity.this);
-//            View DialogView = LayoutInflater.from(HomeActivity.this).inflate(R.layout.danhmucdoan,null);
-//            alerDialog.setView(DialogView);
+//             Xử lý khi biểu tượng "keypad" được nhấn
+            AlertDialog.Builder alerDialog= new AlertDialog.Builder(HomeActivity.this);
+            View DialogView = LayoutInflater.from(HomeActivity.this).inflate(R.layout.danhmucdoan,null);
+            alerDialog.setView(DialogView);
             setContentView(R.layout.danhmucdoan);
 
             return true;
@@ -106,6 +106,14 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.nav_home:
+                break;
+            case R.id.nav_bus:
+                break;
+
+
+        }
         return true;
 
     }
