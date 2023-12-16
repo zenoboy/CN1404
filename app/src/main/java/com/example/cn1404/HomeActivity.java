@@ -1,12 +1,11 @@
 package com.example.cn1404;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -102,18 +101,19 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         return super.onOptionsItemSelected(item);
 
     }
-
-
     @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
+    public boolean onNavigationItemSelected(@NonNull MenuItem Item) {
+        switch (Item.getItemId()) {
             case R.id.nav_home:
-                break;
-            case R.id.nav_bus:
-                break;
-
-
+//            case R.id.nav_yeuthich:
+//                Intent intent = new Intent(HomeActivity.this, YeuthichActivity.class);
+//                startActivity(intent);
+//                break;
+//            case R.id.nav_share:
+//                Toast.makeText(this, "share", Toast.LENGTH_SHORT).show();
+//                break;
         }
+//        drawerLayout.closeDrawer(GravityCompat.START);
         return true;
 
     }

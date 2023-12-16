@@ -6,4 +6,7 @@
     <string name="navigation_drawer_open">Open navigition drawer</string>
     <string name="navigation_drawer_close">Close navigition drawer</string>
     <string name="navi"></string>
+    <string name="i_u_kho_n">Điều Khoản</string>
+    <string name="y_u_th_ch">Yêu thích</string>
+    <string name="t_m_ki_m">Tìm kiếm</string>
 </resources>

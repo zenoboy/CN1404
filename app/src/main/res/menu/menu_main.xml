@@ -2,30 +2,36 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
-    <item
+    <group>
+        <item
         android:id="@+id/action_menu"
         android:icon="@drawable/baseline_menu_24"
         android:title="Menu"
         app:showAsAction="ifRoom" />
-    <item
-        android:id="@+id/action_search"
-        android:icon="@drawable/ic_search"
-        android:title="Tìm kiếm"
-        app:showAsAction="ifRoom"
-        app:actionViewClass="androidx.appcompat.widget.SearchView" />
-    <item
-        android:id="@+id/action_keypad"
-        android:icon="@drawable/ic_keypad"
-        android:title="Keypad"
-        app:showAsAction="always"
-        />
-
+        <item
+            android:id="@+id/action_search"
+            android:icon="@drawable/ic_search"
+            android:title="@string/t_m_ki_m"
+            app:showAsAction="ifRoom"
+            app:actionViewClass="androidx.appcompat.widget.SearchView" />
+        <item
+            android:id="@+id/action_keypad"
+            android:icon="@drawable/ic_keypad"
+            android:title="Keypad"
+            app:showAsAction="always"
+            />
+    </group>
     <group android:checkableBehavior="single">
+<!--        <item-->
+<!--            android:id="@+id/nav_home"-->
+<!--            android:icon="@drawable/ic_home"-->
+<!--            android:title="Home">-->
+<!--        </item>-->
 
         <item
             android:id="@+id/nav_yeuthich"
             android:icon="@drawable/heart"
-            android:title="Yêu thích">
+            android:title="@string/y_u_th_ch">
 
         </item>
         <item
@@ -38,7 +44,7 @@
         <item
             android:id="@+id/nav_dieukhoan"
             android:icon="@drawable/warning"
-            android:title="Điều Khoản">
+            android:title="@string/i_u_kho_n">
 
         </item>
     </group>
