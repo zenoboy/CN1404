@@ -22,6 +22,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,20 +35,25 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+
+        //hide or show items
+        Menu menu = navigationView.getMenu();
+//        menu.findItem(R.id.nav_logout).setVisible(false);
+
         navigationView.bringToFront();
-        ActionBarDrawerToggle toggle =new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+        navigationView.setCheckedItem(R.id.nav_home);
 
     }
 
     @Override
     public void onBackPressed() {
-        if (drawerLayout.isDrawerOpen(GravityCompat.START)){
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START);
-        }
-        else {
+        } else {
             super.onBackPressed();
         }
 
@@ -88,8 +94,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         if (id == R.id.action_keypad) {
 
 //             Xử lý khi biểu tượng "keypad" được nhấn
-            AlertDialog.Builder alerDialog= new AlertDialog.Builder(HomeActivity.this);
-            View DialogView = LayoutInflater.from(HomeActivity.this).inflate(R.layout.danhmucdoan,null);
+            AlertDialog.Builder alerDialog = new AlertDialog.Builder(HomeActivity.this);
+            View DialogView = LayoutInflater.from(HomeActivity.this).inflate(R.layout.danhmucdoan, null);
             alerDialog.setView(DialogView);
             setContentView(R.layout.danhmucdoan);
 
@@ -101,20 +107,35 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         return super.onOptionsItemSelected(item);
 
     }
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem Item) {
-        switch (Item.getItemId()) {
-            case R.id.nav_home:
-//            case R.id.nav_yeuthich:
-//                Intent intent = new Intent(HomeActivity.this, YeuthichActivity.class);
+    //    @Override
+//    public boolean onNavigationItemSelected(@NonNull MenuItem Item) {
+//        if  (Item.getItemId()==R.id.nav_home) {
+//            getSupportFragmentManager().beginTransaction()
+//                    .replace(R.id.nav_yeuthich,new Nav_Home)
+////                Intent intent = new Intent(HomeActivity.this, YeuthichActivity.class);
 //                startActivity(intent);
-//                break;
+//               break;
 //            case R.id.nav_share:
 //                Toast.makeText(this, "share", Toast.LENGTH_SHORT).show();
 //                break;
+//        }
+//       drawerLayout.closeDrawer(GravityCompat.START);
+//        return true;
+//}
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.nav_home) {
+            // Xử lý khi nhấn vào menu Home
+        } else if (item.getItemId() == R.id.nav_yeuthich) {
+            Intent intent = new Intent(HomeActivity.this, YeuthichActivity.class);
+            startActivity(intent);
+        } else if (item.getItemId() == R.id.nav_share) {
+            Toast.makeText(this, "share", Toast.LENGTH_SHORT).show();
         }
-//        drawerLayout.closeDrawer(GravityCompat.START);
+        drawerLayout.closeDrawer(GravityCompat.START);
         return true;
-
     }
+
+
+
 }

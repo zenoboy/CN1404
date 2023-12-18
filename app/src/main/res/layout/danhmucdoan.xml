@@ -6,7 +6,7 @@
     android:padding="0dp"
     android:visibility="visible"
     android:background="@drawable/nendanhmuc"
-    android:gravity="center">
+    android:gravity="top">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,15 +15,15 @@
 
         <ImageButton
             android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
+            android:layout_width="62dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="0"
             android:background="#FF8800"
             android:src="@drawable/baseline_arrow_back_24" />
 
         <TextView
 
-            android:layout_width="370dp"
+            android:layout_width="349dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="0dp"
             android:background="@android:color/holo_orange_dark"
@@ -32,17 +32,19 @@
             android:textColor="@color/white"
             android:textSize="25dp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="62dp"
         android:orientation="horizontal">
-        <SearchView
+
+        <androidx.appcompat.widget.SearchView
             android:id="@+id/searchView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="79dp"
             android:imeOptions="actionSearch"
-            android:queryHint="Tìm kiếm"
-            android:iconifiedByDefault="false"/>
+            android:queryHint="Tìm kiếm" />
+
         <ListView
             android:id="@+id/listView"
             android:layout_width="match_parent"
@@ -52,15 +54,17 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="right"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/BanhNgot"
             android:layout_width="120dp"
             android:layout_height="50dp"
+            android:layout_marginRight="15dp"
             android:text="Bánh Ngọt"
-            android:layout_marginRight="15dp"/>
+            />
 
         <Button
             android:id="@+id/Xoi"
@@ -68,19 +72,21 @@
             android:layout_height="50dp"
             android:layout_marginRight="15dp"
             android:text="Xôi Chè" />
+
         <Button
             android:id="@+id/Oc"
             android:layout_width="120dp"
             android:layout_height="50dp"
-            android:text="ỐC"
-            android:layout_marginRight="15dp"/>
+            android:layout_marginRight="15dp"
+            android:text="ỐC" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="right">
 
         <Button
             android:id="@+id/DoChay"
@@ -130,18 +136,19 @@
             android:layout_marginRight="15dp"/>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/ThitVit"
             android:layout_width="120dp"
             android:layout_height="50dp"
-            android:text="Thịt Vịt"
-            android:layout_marginRight="15dp"/>
+            android:layout_marginRight="15dp"
+            android:text="Thịt Vịt" />
 
         <Button
             android:id="@+id/ThitBo"
@@ -149,14 +156,16 @@
             android:layout_height="50dp"
             android:layout_marginRight="15dp"
             android:text="Thịt Bò" />
+
         <Button
             android:id="@+id/ThitHeo"
             android:layout_width="120dp"
             android:layout_height="50dp"
-            android:text="Thịt Heo"
-            android:layout_marginRight="15dp"/>
+            android:layout_marginRight="15dp"
+            android:text="Thịt Heo" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -184,11 +193,12 @@
             android:layout_marginRight="15dp"/>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/Trung"
@@ -203,12 +213,13 @@
             android:layout_height="50dp"
             android:layout_marginRight="15dp"
             android:text="Món Âu Mỹ" />
+
         <Button
             android:id="@+id/Viet"
             android:layout_width="120dp"
             android:layout_height="50dp"
-            android:text="Món Việt"
-            android:layout_marginRight="15dp"/>
+            android:layout_marginRight="15dp"
+            android:text="Món Việt" />
 
     </LinearLayout>
 </LinearLayout>
