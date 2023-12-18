@@ -103,17 +103,15 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     }
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem Item) {
-        switch (Item.getItemId()) {
-            case R.id.nav_home:
-//            case R.id.nav_yeuthich:
-//                Intent intent = new Intent(HomeActivity.this, YeuthichActivity.class);
-//                startActivity(intent);
-//                break;
-//            case R.id.nav_share:
-//                Toast.makeText(this, "share", Toast.LENGTH_SHORT).show();
-//                break;
+        if (Item.getItemId() == R.id.n  av_home) {
+            // Xử lý khi nhấn vào menu Home
+        } else if (Item.getItemId() == R.id.nav_yeuthich) {
+            Intent intent = new Intent(HomeActivity.this, YeuthichActivity.class);
+            startActivity(intent);
+        } else if (Item.getItemId() == R.id.nav_share) {
+            Toast.makeText(this, "share", Toast.LENGTH_SHORT).show();
         }
-//        drawerLayout.closeDrawer(GravityCompat.START);
+       drawerLayout.closeDrawer(GravityCompat.START);
         return true;
 
     }
