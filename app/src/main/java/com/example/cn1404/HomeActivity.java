@@ -107,7 +107,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         return super.onOptionsItemSelected(item);
 
     }
-    //    @Override
+//        @Override
 //    public boolean onNavigationItemSelected(@NonNull MenuItem Item) {
 //        if  (Item.getItemId()==R.id.nav_home) {
 //            getSupportFragmentManager().beginTransaction()
@@ -136,6 +136,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         return true;
     }
 
-
+//ahihi
 
 }
