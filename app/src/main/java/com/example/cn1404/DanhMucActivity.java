@@ -1,59 +1,53 @@
 package com.example.cn1404;
 
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ListView;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.Toast;
-import android.widget.AdapterView;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import java.util.ArrayList;
 
 public class DanhMucActivity extends AppCompatActivity {
 
-    private SearchView searchView;
     private ListView listView;
     private ArrayAdapter<String> adapter;
-    private ArrayList<String> itemList;
+    private DatabaseHelper dbHelper;
+    private SearchView searchView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.danhmucdoan);
 
-        searchView = findViewById(R.id.searchView);
+        dbHelper = new DatabaseHelper(this);
         listView = findViewById(R.id.listView);
-        itemList = new ArrayList<>();
-        itemList.add("Bánh Ngọt");
-        itemList.add("Xôi Chè");
-        itemList.add("Ốc");
-        itemList.add("Đồ Chay");
-        itemList.add("Hải Sản");
-        itemList.add("Món Nhậu");
-        itemList.add("Kem");
-        itemList.add("Nướng Lẩu");
-        itemList.add("Bún Miến");
-        itemList.add("Thịt Vịt");
-        itemList.add("Thịt Bò");
-        itemList.add("Thịt Heo");
-        itemList.add("Thịt Cá");
-        itemList.add("Món Hàn");
-        itemList.add("Món Nhật");
-        itemList.add("Món Trung");
-        itemList.add("Món Âu Mỹ");
-        itemList.add("Món Việt");
-        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, itemList);
-        listView.setAdapter(adapter);
+        searchView = findViewById(R.id.searchView);
+
+        ImageButton backButton = findViewById(R.id.imageButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+        loadAllFoodItems();
+
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String selectedFood = itemList.get(position);
-                Toast.makeText(DanhMucActivity.this, "Bạn đã chọn: " + selectedFood, Toast.LENGTH_SHORT).show();
+                String selectedFood = (String) parent.getItemAtPosition(position);
+                Toast.makeText(DanhMucActivity.this, "Selected food: " + selectedFood, Toast.LENGTH_SHORT).show();
+                // You can add further actions for the selected item here
             }
         });
+
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -63,9 +57,42 @@ public class DanhMucActivity extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                adapter.getFilter().filter(newText);
-                return false;
+                searchFood(newText);
+                return true;
             }
         });
     }
+
+
+    private void loadAllFoodItems() {
+        Cursor cursor = dbHelper.getAllFoodItems();
+        ArrayList<String> foodList = new ArrayList<>();
+        if (cursor.moveToFirst()) {
+            do {
+                String foodName = cursor.getString(cursor.getColumnIndex(DatabaseHelper.COLUMN_FOOD_NAME));
+                foodList.add(foodName);
+            } while (cursor.moveToNext());
+        }
+        cursor.close();
+
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, foodList);
+        listView.setAdapter(adapter);
+    }
+
+
+    private void searchFood(String searchText) {
+        Cursor searchCursor = dbHelper.searchFoodByName(searchText);
+        ArrayList<String> searchList = new ArrayList<>();
+        if (searchCursor.moveToFirst()) {
+            do {
+                String foodName = searchCursor.getString(searchCursor.getColumnIndex(DatabaseHelper.COLUMN_FOOD_NAME));
+                searchList.add(foodName);
+            } while (searchCursor.moveToNext());
+        }
+        searchCursor.close();
+
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, searchList);
+        listView.setAdapter(adapter);
+    }
 }
+

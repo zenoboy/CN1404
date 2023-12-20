@@ -29,7 +29,7 @@
             android:layout_marginBottom="0dp"
             android:background="@android:color/holo_orange_dark"
             android:gravity="center"
-            android:text="Danh mục đồ ăn"
+            android:text="Tìm kiếm món ăn"
             android:textColor="@color/white"
             android:textSize="25dp" />
     </LinearLayout>
@@ -46,182 +46,11 @@
             android:imeOptions="actionSearch"
             android:queryHint="Tìm kiếm" />
 
-        <ListView
-            android:id="@+id/listView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
     </LinearLayout>
 
-    <LinearLayout
+    <ListView
+        android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="right"
-        android:layout_marginTop="40dp"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/BanhNgot"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:layout_marginRight="15dp"
-            android:text="Bánh Ngọt"
-            />
-
-        <Button
-            android:id="@+id/Xoi"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:layout_marginRight="15dp"
-            android:text="Xôi Chè" />
-
-        <Button
-            android:id="@+id/Oc"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:layout_marginRight="15dp"
-            android:text="ỐC" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:gravity="right">
-
-        <Button
-            android:id="@+id/DoChay"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:text="Đồ Chay"
-            android:layout_marginRight="15dp"/>
-
-        <Button
-            android:id="@+id/Haisan"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:layout_marginRight="15dp"
-            android:text="Hải Sản" />
-        <Button
-            android:id="@+id/Monnhau"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:text="Món Nhậu"
-            android:layout_marginRight="15dp"/>
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:gravity="center">
-
-        <Button
-            android:id="@+id/Kem"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:text="Kem"
-            android:layout_marginRight="15dp"/>
-
-        <Button
-            android:id="@+id/NuongLau"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:layout_marginRight="15dp"
-            android:text="Nướng Lẩu" />
-        <Button
-            android:id="@+id/BunMien"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:text="Bún Miến"
-            android:layout_marginRight="15dp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/ThitVit"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:layout_marginRight="15dp"
-            android:text="Thịt Vịt" />
-
-        <Button
-            android:id="@+id/ThitBo"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:layout_marginRight="15dp"
-            android:text="Thịt Bò" />
-
-        <Button
-            android:id="@+id/ThitHeo"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:layout_marginRight="15dp"
-            android:text="Thịt Heo" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:gravity="center">
-
-        <Button
-            android:id="@+id/ThitGa"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:text="Thịt Gà"
-            android:layout_marginRight="15dp"/>
-
-        <Button
-            android:id="@+id/Han"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:layout_marginRight="15dp"
-            android:text="Món Hàn" />
-        <Button
-            android:id="@+id/Nhat"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:text="Món NHật"
-            android:layout_marginRight="15dp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/Trung"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:layout_marginRight="15dp"
-            android:text="Món Trung" />
-
-        <Button
-            android:id="@+id/AuMy"
-            android:layout_width="122dp"
-            android:layout_height="50dp"
-            android:layout_marginRight="15dp"
-            android:text="Món Âu Mỹ" />
-
-        <Button
-            android:id="@+id/Viet"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:layout_marginRight="15dp"
-            android:text="Món Việt" />
-
-    </LinearLayout>
+        android:layout_height="match_parent" />
 
 </LinearLayout>
