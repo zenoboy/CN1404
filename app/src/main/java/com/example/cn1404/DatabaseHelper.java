@@ -5,6 +5,9 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import java.io.ByteArrayOutputStream;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
@@ -16,9 +19,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     static final String COLUMN_INTRODUCT = "introduct";
     static final String COLUMN_INGREDIENT = "ingredient";
     static final String COLUMN_PERFORM = "perform";
+    static final String COLUMN_IMAGE = "image";
+    private Context context;
 
     DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
+        this.context = context;
     }
 
     @Override
@@ -28,7 +34,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 + COLUMN_FOOD_NAME + " TEXT,"
                 + COLUMN_INTRODUCT + " TEXT,"
                 + COLUMN_INGREDIENT + " TEXT,"
-                + COLUMN_PERFORM + " TEXT" + ")";
+                + COLUMN_PERFORM + " TEXT,"
+                + COLUMN_IMAGE + " BLOB" + ")";
         db.execSQL(CREATE_TABLE);
     }
 
@@ -38,13 +45,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    long addFoodItem(String foodName, String introduct, String ingredient, String perform) {
+
+
+    long addFoodItem(String foodName, String introduct, String ingredient, String perform, byte[] image) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(COLUMN_FOOD_NAME, foodName);
         values.put(COLUMN_INTRODUCT, introduct);
         values.put(COLUMN_INGREDIENT, ingredient);
         values.put(COLUMN_PERFORM, perform);
+        values.put(COLUMN_IMAGE, image);
+        Bitmap bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.anngon);
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
+        byte[] imageBytes = stream.toByteArray();
         long result = db.insert(TABLE_NAME, null, values);
         db.close();
         return result;
