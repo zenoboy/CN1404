@@ -3,8 +3,15 @@
     <style name="Base.Theme.CN1404" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="android:windowBackground">@drawable/bg_splash</item> <!-- Sửa lỗi chính tả ở đây -->
     </style>
 
     <style name="Theme.CN1404" parent="Base.Theme.CN1404" />
+<!--    <style name="ThemeSpl" parent="Theme.Material3.DayNight.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your light theme here. &ndash;&gt;-->
+<!--        &lt;!&ndash; <item name="colorPrimary">@color/my_light_primary</item> &ndash;&gt;-->
+<!--    </style>-->
+    <style name="ThemeSpl" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+
+    </style>
 </resources>

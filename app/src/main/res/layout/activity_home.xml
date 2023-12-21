@@ -10,7 +10,6 @@
     tools:context=".HomeActivity"
     android:fitsSystemWindows="true"
     tools:openDrawer="start"
-
     >
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
@@ -18,8 +17,8 @@
         android:id="@+id/nav_view"
         app:headerLayout="@layout/header"
         app:menu="@menu/menu_main"
-        android:layout_gravity="start"
-        />
+        android:layout_gravity="start" />
+
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -35,7 +34,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="0">
 
         <androidx.constraintlayout.utils.widget.ImageFilterView
             android:layout_width="match_parent"
@@ -77,20 +76,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_gravity="center"
+                android:layout_marginBottom="12dp"
                 android:background="@drawable/trangmieng"
                 android:text="MÓN Tráng miệng"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                android:layout_marginBottom="12dp"/>
+                android:textSize="30sp" />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonDouong"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_gravity="center"
+                android:background="@drawable/douong"
                 android:text="Đồ Uống - GIẢI KHÁT"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                android:background="@drawable/douong"/>
+                android:textSize="30sp" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

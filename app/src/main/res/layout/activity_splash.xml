@@ -15,10 +15,10 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:src="@drawable/monngon"
-            android:layout_gravity="center"
             android:layout_width="300dp"
-            android:layout_height="300dp"/>
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:src="@drawable/monngon" />
 
         <TextView
             android:layout_gravity="center"
