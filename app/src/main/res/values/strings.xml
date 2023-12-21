@@ -8,6 +8,7 @@
     <string name="navi"></string>
     <string name="login">LOGIN</string>
     <string name="email">Email</string>
+    <string name="register">Register</string>
     <string name="password">Password</string>
     <string name="i_u_kho_n">Điều Khoản</string>
     <string name="y_u_th_ch">Yêu thích</string>
