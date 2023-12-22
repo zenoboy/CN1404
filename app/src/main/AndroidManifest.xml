@@ -81,6 +81,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".douongactivity"></activity>
         <activity
             android:name=".SplashActivity"
             android:exported="false" />
@@ -90,6 +91,7 @@
         <activity
             android:name=".HomeActivity"
             android:exported="false" />
+        <activity android:name=".MonAnActivity"></activity>
     </application>
 
 </manifest>

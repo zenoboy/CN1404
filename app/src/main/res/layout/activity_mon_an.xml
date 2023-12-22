@@ -55,80 +55,80 @@
         android:layout_marginTop="16dp"/>
 
     <!-- Phần chia thành 3 phần: Giới thiệu món ăn, Nguyên liệu, Thực hiện -->
-    <ScrollView
-        android:id="@+id/scrollView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonChiaSe"
-        app:layout_constraintBottom_toBottomOf="parent">
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonChiaSe"
+            app:layout_constraintBottom_toBottomOf="parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
-
-            <!-- Phần Giới thiệu món ăn -->
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Giới thiệu món ăn"
-                android:layout_marginLeft="90dp"
-                android:textSize="25sp"/>
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Phần Giới thiệu món ăn -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Giới thiệu món ăn"
+                    android:layout_marginLeft="90dp"
+                    android:textSize="25sp"/>
 
 
-            <TextView
-                android:id="@+id/textViewGioiThieu"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:text="Nội dung giới thiệu món ăn"/>
+                <TextView
+                    android:id="@+id/textViewGioiThieu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Nội dung giới thiệu món ăn"/>
 
-            <!-- Phần Nguyên liệu -->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Nguyên liệu"
-                android:layout_marginLeft="125dp"
-                android:textSize="25sp"/>
+                <!-- Phần Nguyên liệu -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nguyên liệu"
+                    android:layout_marginLeft="125dp"
+                    android:textSize="25sp"/>
 
-            <TextView
-                android:id="@+id/textViewNguyenLieu"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:text="Danh sách nguyên liệu"/>
+                <TextView
+                    android:id="@+id/textViewNguyenLieu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Danh sách nguyên liệu"/>
 
-            <!-- Phần Thực hiện -->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Thực hiện"
-                android:layout_marginLeft="130dp"
-                android:textSize="25sp"/>
+                <!-- Phần Thực hiện -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thực hiện"
+                    android:layout_marginLeft="130dp"
+                    android:textSize="25sp"/>
 
-            <TextView
-                android:id="@+id/textViewThucHien"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Cách thực hiện món ăn"
-                android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/textViewThucHien"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cách thực hiện món ăn"
+                    android:layout_marginTop="10dp"/>
 
-            <ImageView
-                android:id="@+id/imageViewMonAn"
-                android:layout_width="wrap_content"
-                android:layout_height="300dp"
-                android:layout_marginTop="10dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/anngon"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewThucHien" />
-        </LinearLayout>
-    </ScrollView>
+                <ImageView
+                    android:id="@+id/imageViewMonAn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/anngon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewThucHien" />
+            </LinearLayout>
+        </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

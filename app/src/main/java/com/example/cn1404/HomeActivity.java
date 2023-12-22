@@ -48,6 +48,24 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setCheckedItem(R.id.nav_home);
 
         //nut chuyen trang nè
+        AppCompatButton buttonkhaivi = findViewById(R.id.buttonkhaivi);
+
+        buttonkhaivi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, Khai_Vi_Activity.class);
+                startActivity(intent);
+            }
+        });
+        AppCompatButton buttonmonchinh = findViewById(R.id.buttonmonchinh);
+
+        buttonmonchinh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, MonChinhActivity.class);
+                startActivity(intent);
+            }
+        });
         AppCompatButton buttontrangmien = findViewById(R.id.buttontrangmien);
 
         buttontrangmien.setOnClickListener(new View.OnClickListener() {

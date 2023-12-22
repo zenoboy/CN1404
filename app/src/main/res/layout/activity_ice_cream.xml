@@ -5,7 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Ice_cream">
+    tools:context=".Ice_cream"
+    >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -67,6 +68,7 @@
                 android:layout_marginBottom="12dp"/>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/valli"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:gravity="center|bottom"
@@ -77,6 +79,7 @@
                 android:layout_marginBottom="12dp"/>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/socola"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:gravity="center|bottom"
@@ -87,7 +90,7 @@
                 android:textSize="30sp" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/buttonDouong"
+                android:id="@+id/kembo"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:gravity="center|bottom"
@@ -97,16 +100,7 @@
                 android:textSize="30sp"
                 android:layout_marginBottom="12dp"
                 />
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:gravity="center|bottom"
-                android:background="@drawable/douong"
-                android:text="Kem Xoài"
-                android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                android:layout_marginBottom="12dp"
-                />
+
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
