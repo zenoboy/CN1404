@@ -24,7 +24,8 @@ public class RecipeListActivity extends AppCompatActivity {
 
         ListView listView = findViewById(R.id.listView);
         recipeDataManager = new RecipeDataManager(this);
-        recipeDataManager.open();
+
+
 
         addExampleData();
 

@@ -29,15 +29,15 @@
         <activity
             android:name=".Mon_Ca_Activity"
             android:exported="false" />
-        <activity
-            android:name=".database.Mon_Ca_Activity"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".database.Mon_Ca_Activity"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".Mon_Bo_Activity"
             android:exported="false" />
-        <activity
-            android:name=".database.Mon_Bo_Activity"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".database.Mon_Bo_Activity"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".Mon_Ga_Activity"
             android:exported="false" />
@@ -62,9 +62,9 @@
         <activity
             android:name=".Ice_cream"
             android:exported="false" />
-        <activity
-            android:name=".Cake"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".Cake"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".Register"
             android:exported="false" />
