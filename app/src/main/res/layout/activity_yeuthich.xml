@@ -6,13 +6,11 @@
     android:orientation="vertical"
     >
 
-    <!-- Phần trên cùng: Yêu thích và nút quay lại -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp">
 
-        <!-- Nút quay lại -->
         <Button
             android:id="@+id/buttonQuayLai"
             android:layout_width="wrap_content"
@@ -30,7 +28,6 @@
 
     </RelativeLayout>
 
-    <!-- Danh sách các món ăn yêu thích -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -40,7 +37,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Món ăn yêu thích 1 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
@@ -50,14 +46,12 @@
                 android:background="@drawable/anngon">
 
 
-                <!-- Tên món ăn -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Món ăn yêu thích 1"
                     android:textSize="18sp" />
 
-                <!-- Mô tả món ăn hoặc các thông tin khác -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -66,7 +60,6 @@
 
             </LinearLayout>
 
-            <!-- Món ăn yêu thích 2 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
@@ -75,14 +68,12 @@
                 android:layout_margin="8dp"
                 android:background="@drawable/anngon">
 
-                <!-- Tên món ăn -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Món ăn yêu thích 2"
                     android:textSize="18sp" />
 
-                <!-- Mô tả món ăn hoặc các thông tin khác -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -91,7 +82,6 @@
 
             </LinearLayout>
 
-            <!-- Món ăn yêu thích 3 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
@@ -100,14 +90,12 @@
                 android:layout_margin="8dp"
                 android:background="@drawable/anngon">
 
-                <!-- Tên món ăn -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Món ăn yêu thích 3"
                     android:textSize="18sp" />
 
-                <!-- Mô tả món ăn hoặc các thông tin khác -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

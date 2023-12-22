@@ -46,5 +46,11 @@
             android:icon="@drawable/warning"
             android:title="@string/i_u_kho_n">
         </item>
+        <item
+            android:id="@+id/nav_loguout"
+            android:icon="@drawable/logout"
+            android:title="Logout"
+            >
+        </item>
     </group>
 </menu>

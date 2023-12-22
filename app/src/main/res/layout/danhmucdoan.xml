@@ -14,24 +14,29 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="62dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0"
-            android:background="#FF8800"
-            android:src="@drawable/baseline_arrow_back_24" />
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FF6B62">
 
-        <TextView
+            <Button
+                android:id="@+id/back1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/baseline_arrow_back_24"
+                android:textColor="#FF6B62"/>
 
-            android:layout_width="349dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="0dp"
-            android:background="@android:color/holo_orange_dark"
-            android:gravity="center"
-            android:text="Tìm kiếm món ăn"
-            android:textColor="@color/white"
-            android:textSize="25dp" />
+            <TextView
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:gravity="center"
+                android:text="Tìm kiếm món ăn"
+                android:textColor="@color/white"
+                android:textSize="27dp" />
+
+        </androidx.appcompat.widget.Toolbar>
     </LinearLayout>
 
     <LinearLayout

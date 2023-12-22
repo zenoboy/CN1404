@@ -19,13 +19,10 @@ public class YeuthichActivity extends AppCompatActivity {
         buttonQuayLai.setOnClickListener(new View.OnClickListener()
         {
             public void onClick (View view){
-                // Tạo Intent để chuyển đến HomeActivity
                 Intent intent = new Intent(YeuthichActivity.this, HomeActivity.class);
 
-                // Đặt cờ để xóa khỏi ngăn đợi (back stack) và tạo ra HomeActivity như là một trang mới
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
 
-                // Khởi chạy Intent
                 startActivity(intent);
             }
         });

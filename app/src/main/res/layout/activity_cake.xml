@@ -28,7 +28,7 @@
             <ImageView
                 android:layout_width="200dp"
                 android:layout_height="200dp"
-                android:src="@drawable/banh_ngot_3" />
+                />
 
             <!-- Thêm các thành phần khác tương tự -->
 

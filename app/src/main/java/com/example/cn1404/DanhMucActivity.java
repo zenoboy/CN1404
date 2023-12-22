@@ -1,7 +1,10 @@
 package com.example.cn1404;
-
-import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+
+
+import android.content.Intent;
+import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.ArrayAdapter;
 import android.widget.SearchView;
@@ -24,27 +27,23 @@ public class DanhMucActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.danhmucdoan);
 
+        Button buttonQuayLai = findViewById(R.id.back1);
+
+        buttonQuayLai.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick (View view){
+                Intent intent = new Intent(DanhMucActivity.this, HomeActivity.class);
+
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
+                startActivity(intent);
+            }
+        });
+
+
         searchView = findViewById(R.id.searchView);
         listView = findViewById(R.id.listView);
-        itemList = new ArrayList<>();
-        itemList.add("Bánh Ngọt");
-        itemList.add("Xôi Chè");
-        itemList.add("Ốc");
-        itemList.add("Đồ Chay");
-        itemList.add("Hải Sản");
-        itemList.add("Món Nhậu");
-        itemList.add("Kem");
-        itemList.add("Nướng Lẩu");
-        itemList.add("Bún Miến");
-        itemList.add("Thịt Vịt");
-        itemList.add("Thịt Bò");
-        itemList.add("Thịt Heo");
-        itemList.add("Thịt Cá");
-        itemList.add("Món Hàn");
-        itemList.add("Món Nhật");
-        itemList.add("Món Trung");
-        itemList.add("Món Âu Mỹ");
-        itemList.add("Món Việt");
+
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, itemList);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
