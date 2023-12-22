@@ -61,7 +61,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:gravity="center|bottom"
-                    android:background="@drawable/khaivi"
+                    android:background="@drawable/canuong"
                     android:text="CÁ NƯỚNG MỠ HÀNH"
                     android:textColor="#FFFFFF"
                     android:textSize="25sp"
@@ -72,27 +72,29 @@
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:gravity="center|bottom"
-                    android:background="@drawable/chinh"
+                    android:background="@drawable/cakho"
                     android:text="CÁ KHO NGHỆ"
                     android:textColor="#FFFFFF"
                     android:textSize="25sp"
                     android:layout_marginBottom="12dp"/>
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/CaChien"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/cachien"
                     android:gravity="center|bottom"
-                    android:background="@drawable/khaivi"
                     android:text="CÁ CHIÊN SẢ ỚT"
                     android:textColor="#FFFFFF"
-                    android:textSize="25sp"
-                    android:layout_marginBottom="12dp"/>
+                    android:textSize="25sp" />
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/CanhCa"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:gravity="center|bottom"
-                    android:background="@drawable/khaivi"
+                    android:background="@drawable/canhca"
                     android:text="CANH CÁ NÂU MĂNG"
                     android:textColor="#FFFFFF"
                     android:textSize="25sp"
