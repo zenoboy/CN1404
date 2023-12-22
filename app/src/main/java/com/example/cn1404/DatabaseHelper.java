@@ -19,6 +19,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "FoodDB";
     private static final int DATABASE_VERSION = 1;
+
     static final String TABLE_NAME = "FoodItems";
 
     static final String COLUMN_ID = "id";
@@ -127,18 +128,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 new String[]{"%" + searchText + "%"}, null, null, null);
     }
 
-    /**
-     * Adds a drink to the favorites database
-     *
-     * @param id            drink id
-     * @param name          drink name
-     * @param category      drink category
-     * @param glass         preferred glass
-     * @param instructions  drink preparation instructions
-     * @param ingredients   drink ingredients
-     * @param thumbnail_url drink thumbnail url
-     * @return number of rows inserted, -1 if no drink was inserted
-     */
+
     public long addToFavourites(int id, String name, String category, String glass, String instructions, String ingredients, String thumbnail_url) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -155,24 +145,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return affected;
     }
 
-    /**
-     * Deletes a drink from favorites
-     *
-     * @param id drink id
-     * @return number of rows deleted, 0 if no drink was deleted
-     */
+
     public int deleteFromFavourites(int id) {
         SQLiteDatabase db = this.getWritableDatabase();
         int affected = db.delete(TABLE_FAVOURITES, FAVOURITES_ID + " = ?", new String[]{String.valueOf(id)});
         db.close();
         return affected;
     }
-    /**
-     * Return an ArrayList of HashMaps containing id, name, category, thumbnail url and added at
-     * of drinks added as favourites.
-     *
-     * @return list with info of drinks
-     */
+
     public ArrayList<HashMap<String, String>> getFavourites() {
         ArrayList<HashMap<String, String>> entries = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();

@@ -26,7 +26,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Đồ Uống - Coctail"
+                android:text="ĐỒ ĂN KHAI VỊ"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 android:textColor="#FFFFFF"
@@ -57,26 +57,29 @@
                 android:orientation="vertical">
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/PhaChe"
+                    android:id="@+id/MonSup"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:gravity="center|bottom"
                     android:background="@drawable/khaivi"
-                    android:text="PHA CHẾ"
+                    android:text="MÓN SÚP"
                     android:textColor="#FFFFFF"
                     android:textSize="25sp"
                     android:layout_marginBottom="12dp"/>
 
+
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/SinhTo"
+                    android:id="@+id/Salad"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:gravity="center|bottom"
-                    android:background="@drawable/trangmieng"
-                    android:text="SINH TỐ"
+                    android:background="@drawable/chinh"
+                    android:text="SALAD"
                     android:textColor="#FFFFFF"
                     android:textSize="25sp"
                     android:layout_marginBottom="12dp"/>
+
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>

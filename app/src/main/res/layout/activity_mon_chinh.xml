@@ -26,7 +26,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Đồ Uống - Coctail"
+                android:text="Món Chính"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 android:textColor="#FFFFFF"
@@ -57,12 +57,23 @@
                 android:orientation="vertical">
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/PhaChe"
+                    android:id="@+id/MonGa"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:gravity="center|bottom"
                     android:background="@drawable/khaivi"
-                    android:text="PHA CHẾ"
+                    android:text="MÓN GÀ"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:layout_marginBottom="12dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/MonBo"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center|bottom"
+                    android:background="@drawable/chinh"
+                    android:text="MÓN BÒ"
                     android:textColor="#FFFFFF"
                     android:textSize="25sp"
                     android:layout_marginBottom="12dp"/>
@@ -73,7 +84,7 @@
                     android:layout_height="150dp"
                     android:gravity="center|bottom"
                     android:background="@drawable/trangmieng"
-                    android:text="SINH TỐ"
+                    android:text="MÓN CÁ"
                     android:textColor="#FFFFFF"
                     android:textSize="25sp"
                     android:layout_marginBottom="12dp"/>
