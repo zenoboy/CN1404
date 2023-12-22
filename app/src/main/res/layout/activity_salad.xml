@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Cake_Activity">
-
+    tools:context=".Salad_Activity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -27,7 +26,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Các Loại Bánh Ngọt"
+                android:text="Các Món Salad"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 android:textColor="#FFFFFF"
@@ -58,43 +57,43 @@
                 android:orientation="vertical">
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/Banhcupcake"
+                    android:id="@+id/SaladCaHoi"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:gravity="center|bottom"
                     android:background="@drawable/khaivi"
-                    android:text="BÁNH CUPCAKE"
+                    android:text="SALAD CÁ HỒI"
                     android:textColor="#FFFFFF"
                     android:textSize="25sp"
                     android:layout_marginBottom="12dp"/>
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/SuKem"
+                    android:id="@+id/SaladUcGa"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:gravity="center|bottom"
                     android:background="@drawable/chinh"
-                    android:text="BÁNH SU KEM"
+                    android:text="SALAD ỨC GÀ"
                     android:textColor="#FFFFFF"
                     android:textSize="25sp"
                     android:layout_marginBottom="12dp"/>
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/Banhbonglan"
+                    android:id="@+id/SaladTraiCay"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:gravity="center|bottom"
                     android:background="@drawable/khaivi"
-                    android:text="BÁNH BÔNG LAN"
+                    android:text="SALAD TRÁI CÂY"
                     android:textColor="#FFFFFF"
                     android:textSize="25sp"
                     android:layout_marginBottom="12dp"/>
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/BanhDonut"
+                    android:id="@+id/SaladThitBo"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:gravity="center|bottom"
                     android:background="@drawable/khaivi"
-                    android:text="BÁNH DONUT"
+                    android:text="SALAD THỊT BÒ"
                     android:textColor="#FFFFFF"
                     android:textSize="25sp"
                     android:layout_marginBottom="12dp"/>
