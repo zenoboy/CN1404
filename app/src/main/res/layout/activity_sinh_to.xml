@@ -57,43 +57,43 @@
                 android:orientation="vertical">
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/BoPhoMai"
+                    android:id="@+id/Sapoche"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:gravity="center|bottom"
                     android:background="@drawable/khaivi"
-                    android:text="BÒ CUỘN PHÔ MAI"
+                    android:text="SINH TỐ SAPOCHE"
                     android:textColor="#FFFFFF"
                     android:textSize="25sp"
                     android:layout_marginBottom="12dp"/>
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/BoXao"
+                    android:id="@+id/DauTay"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:gravity="center|bottom"
                     android:background="@drawable/chinh"
-                    android:text="BÒ XÀO LÁ LỐT"
+                    android:text="SINH TỐ DÂU TÂY"
                     android:textColor="#FFFFFF"
                     android:textSize="25sp"
                     android:layout_marginBottom="12dp"/>
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/BoSotTieu"
+                    android:id="@+id/SinhToBo"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:gravity="center|bottom"
                     android:background="@drawable/khaivi"
-                    android:text="BÒ SỐT TIÊU ĐEN"
+                    android:text="SINH TỐ BƠ"
                     android:textColor="#FFFFFF"
                     android:textSize="25sp"
                     android:layout_marginBottom="12dp"/>
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/BoSotVang"
+                    android:id="@+id/SinhToXoai"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:gravity="center|bottom"
                     android:background="@drawable/khaivi"
-                    android:text="BÒ SỐT VANG"
+                    android:text="SINH TỐ XOÀI"
                     android:textColor="#FFFFFF"
                     android:textSize="25sp"
                     android:layout_marginBottom="12dp"/>
