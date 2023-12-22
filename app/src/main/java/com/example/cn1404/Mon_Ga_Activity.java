@@ -28,7 +28,8 @@ public class Mon_Ga_Activity extends AppCompatActivity {
         cafeSuaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String recipeInstructions = "Công thức làm Gà Kho Nghệ: \nNguyên liệu:\n" +
+                String recipeInstructions = "Công thức làm Gà Kho Nghệ: \n" +
+                        "Nguyên liệu:\n" +
                         "\n" +
                         "1 con gà (hoặc các phần gà mà bạn thích: cánh, đùi, ức, v.v.)\n" +
                         "2 muỗng canh nghệ bột\n" +
@@ -70,7 +71,8 @@ public class Mon_Ga_Activity extends AppCompatActivity {
         CapuchinoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String recipeInstructions = "Cách làm Gà Tân Ngải cứu: \n Nguyên liệu:\n" +
+                String recipeInstructions = "Cách làm Gà Tân Ngải cứu: \n " +
+                        "Nguyên liệu:\n" +
                         "\n" +
                         "1 con gà (hoặc các phần gà mà bạn thích: cánh, đùi, ức, v.v.)\n" +
                         "1/2 chén ngải cứu tươi hoặc 2 muỗng canh ngải cứu khô\n" +
@@ -108,7 +110,8 @@ public class Mon_Ga_Activity extends AppCompatActivity {
         BacSiu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String recipeInstructions = "Công thức làm Gà Chiên Sốt Me:\n Nguyên liệu:\n" +
+                String recipeInstructions = "Công thức làm Gà Chiên Sốt Me:\n " +
+                        "Nguyên liệu:\n" +
                         "\n" +
                         "1 con gà (hoặc các phần gà mà bạn thích: cánh, đùi, ức, v.v.)\n" +
                         "1 chén nước mè (me) đen\n" +
@@ -144,7 +147,8 @@ public class Mon_Ga_Activity extends AppCompatActivity {
         TraDaoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String recipeInstructions = "Công thức làm Gà Nướng Muối Ớt :\n Nguyên liệu:\n" +
+                String recipeInstructions = "Công thức làm Gà Nướng Muối Ớt :\n " +
+                        "Nguyên liệu:\n" +
                         "\n" +
                         "1 con gà (hoặc các phần gà mà bạn thích: cánh, đùi, ức, v.v.)\n" +
                         "2-3 muỗng canh dầu ăn\n" +

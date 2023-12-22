@@ -28,7 +28,8 @@ public class Mon_Bo_Activity extends AppCompatActivity {
         cafeSuaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String recipeInstructions = "Công thức làm Bò Cuộn Phô Mai: \n Nguyên liệu:\n" +
+                String recipeInstructions = "Công thức làm Bò Cuộn Phô Mai: \n " +
+                        "Nguyên liệu:\n" +
                         "\n" +
                         "300g thịt bò, cắt thành sợi mảnh\n" +
                         "Lá lốt tươi, 30-40 lá (tùy vào số lượng và kích thước lá)\n" +
@@ -43,20 +44,20 @@ public class Mon_Bo_Activity extends AppCompatActivity {
                         "\n" +
                         "Chuẩn bị lá lốt:\n" +
                         "\n" +
-                        "Rửa sạch lá lốt, cắt bỏ cuống và để ráo.\n" +
+                        "Bước 1: Rửa sạch lá lốt, cắt bỏ cuống và để ráo.\n" +
                         "Nếu lá lốt lớn, bạn có thể cắt nhỏ để dễ cuốn.\n" +
-                        "Chế biến thịt bò:\n" +
+                        "Bước 2: Chế biến thịt bò:\n" +
                         "\n" +
                         "Ướp thịt bò với nước mắm, đường, tiêu, tỏi băm và gừng băm. Để thịt ướp trong khoảng 15-30 phút.\n" +
-                        "Cuộn lá lốt:\n" +
+                        "Bước 3: Cuộn lá lốt:\n" +
                         "\n" +
                         "Đặt lá lốt ra mặt phẳng, đặt một lớp thịt bò ở giữa, sau đó cuộn lá lốt quanh thịt bò.\n" +
                         "Gắn bằng que tre hoặc chỉ để giữ cho lá lốt không bung ra khi xào.\n" +
-                        "Xào bò với lá lốt:\n" +
+                        "Bước 4: Xào bò với lá lốt:\n" +
                         "\n" +
                         "Đun nóng dầu ăn trong chảo.\n" +
                         "Đặt các cuộn lá lốt đã cuộn vào chảo, xào cho đến khi lá lốt và thịt bò chín và có màu đẹp.\n" +
-                        "Trang trí và thưởng thức:\n" +
+                        "Bước 5: Trang trí và thưởng thức:\n" +
                         "\n" +
                         "Trước khi tắt bếp, rắc hành lá và trang trí bằng rau sống, ớt theo khẩu vị cá nhân.\n" +
                         "Dùng nóng với cơm trắng.";
@@ -87,22 +88,22 @@ public class Mon_Bo_Activity extends AppCompatActivity {
                         "Rau sống (cà rốt, bắp cải, cần tây) để trang trí (tùy chọn)\n" +
                         "Cách thực hiện:\n" +
                         "\n" +
-                        "Chế biến thịt bò:\n" +
+                        "Bước 1: Chế biến thịt bò:\n" +
                         "\n" +
                         "Ướp thịt bò với nước tương, nước mắm, tiêu đen, đường, và tỏi băm. Để thịt ướp trong ít nhất 30 phút.\n" +
-                        "Xào thịt bò:\n" +
+                        "Bước 2: Xào thịt bò:\n" +
                         "\n" +
                         "Đun nóng dầu ăn trong chảo.\n" +
                         "Xào tỏi và hành tây cho đến khi thơm.\n" +
                         "Thêm thịt bò vào chảo, xào đến khi thịt chín và có màu vàng đẹp.\n" +
-                        "Nấu sốt tiêu đen:\n" +
+                        "Bước 3: Nấu sốt tiêu đen:\n" +
                         "\n" +
                         "Thêm nước tương, nước mắm, tiêu đen, đường, tương ớt (nếu sử dụng), và nước vào chảo. Khuấy đều.\n" +
                         "Nấu sôi và thêm rau sống:\n" +
                         "\n" +
                         "Đun sôi và nấu cho đến khi sốt cô đặc hơn.\n" +
                         "Nếu muốn, bạn có thể thêm rau sống như cà rốt, bắp cải, cần tây vào sốt và trang trí lên trên thịt bò.\n" +
-                        "Trang trí và thưởng thức:\n" +
+                        "Bước 4: Trang trí và thưởng thức:\n" +
                         "\n" +
                         "Trước khi tắt bếp, trang trí bữa ăn với rau sống (tùy chọn).\n" +
                         "Dùng nóng với cơm trắng. ";
@@ -115,7 +116,8 @@ public class Mon_Bo_Activity extends AppCompatActivity {
         BacSiu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String recipeInstructions = "Công thức làm Bò Sốt Tiêu Đen:\n Nguyên liệu:\n" +
+                String recipeInstructions = "Công thức làm Bò Sốt Tiêu Đen:\n" +
+                        " Nguyên liệu:\n" +
                         "\n" +
                         "1 con gà (hoặc các phần gà mà bạn thích: cánh, đùi, ức, v.v.)\n" +
                         "1 chén nước mè (me) đen\n" +
@@ -151,7 +153,8 @@ public class Mon_Bo_Activity extends AppCompatActivity {
         TraDaoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String recipeInstructions = "Công thức làm Bò Sốt Vang:\n Nguyên liệu:\n" +
+                String recipeInstructions = "Công thức làm Bò Sốt Vang:\n " +
+                        "Nguyên liệu:\n" +
                         "\n" +
                         "500g thịt bò (có thể là thịt tái hoặc thịt sườn), cắt thành sợi mảnh\n" +
                         "1 chai rượu vang đỏ (khoảng 750ml)\n" +
@@ -164,22 +167,22 @@ public class Mon_Bo_Activity extends AppCompatActivity {
                         "Muối, tiêu, và gia vị khác theo khẩu vị\n" +
                         "Cách thực hiện:\n" +
                         "\n" +
-                        "Chế biến thịt bò:\n" +
+                        "Bước 1: Chế biến thịt bò:\n" +
                         "\n" +
                         "Ướp thịt bò với nước tương, tiêu, và một ít dầu ăn. Để thịt ướp trong khoảng 15-30 phút.\n" +
-                        "Nướng thịt bò:\n" +
+                        "Bước 2: Nướng thịt bò:\n" +
                         "\n" +
                         "Nướng thịt bò trên chảo với lửa cao cho đến khi chúng có màu vàng đẹp.\n" +
-                        "Chế biến sốt vang:\n" +
+                        "Bước 3: Chế biến sốt vang:\n" +
                         "\n" +
                         "Trong một nồi lớn, đun nóng dầu ăn, phi hành tây và tỏi cho đến khi thơm.\n" +
                         "Thêm rượu vang đỏ vào nồi và đun sôi. Nếu có thể, để rượu vang nấu chín và mất đi mùi cồn.\n" +
                         "Thêm nước tương, đường, tiêu, và gia vị khác nếu cần thiết. Khuấy đều.\n" +
-                        "Nấu sốt và xào thịt:\n" +
+                        "Bước 4: Nấu sốt và xào thịt:\n" +
                         "\n" +
                         "Đặt thịt bò nướng vào nồi sốt vang, đun nhỏ lửa và nấu cho thịt hấp thụ hương vị từ sốt vang.\n" +
                         "Nấu cho đến khi thịt mềm và sốt cô đặc hơn.\n" +
-                        "Trang trí và thưởng thức:\n" +
+                        "Bước 5: Trang trí và thưởng thức:\n" +
                         "\n" +
                         "Trước khi tắt bếp, kiểm tra và điều chỉnh vị gia vị nếu cần thiết.\n" +
                         "Dùng nóng với cơm trắng hoặc bánh mì.";

@@ -36,16 +36,16 @@ public class Do_Uong_Pha_CheActivity extends AppCompatActivity {
                         "2-3 muỗng nước nóng\n" +
                         "150ml sữa đặc hoặc sữa tươi\n" +
                         "Một chút cacao bột (tuỳ chọn)\n" +
-                        "Cách làm:\n" +
-                        "Pha cà phê: Đặt bột cà phê vào cốc. Đổ nước nóng vào bột cà phê và khuấy đều cho bột cà phê tan hoàn toàn.\n" +
+                        "Cách thực hiện:\n" +
+                        "Bước 1: Pha cà phê: Đặt bột cà phê vào cốc. Đổ nước nóng vào bột cà phê và khuấy đều cho bột cà phê tan hoàn toàn.\n" +
                         "\n" +
-                        "Pha sữa: Trong một nồi nhỏ, hâm nóng sữa đặc hoặc sữa tươi trên lửa nhỏ. Đảm bảo sữa không sôi.\n" +
+                        "Bước 2: Pha sữa: Trong một nồi nhỏ, hâm nóng sữa đặc hoặc sữa tươi trên lửa nhỏ. Đảm bảo sữa không sôi.\n" +
                         "\n" +
-                        "Pha chung: Sau khi cà phê đã tan, đổ sữa đang hâm nóng vào cốc chứa cà phê.\n" +
+                        "Bước 3: Pha chung: Sau khi cà phê đã tan, đổ sữa đang hâm nóng vào cốc chứa cà phê.\n" +
                         "\n" +
                         "Thêm đường: Thêm đường theo khẩu vị cá nhân vào cốc cà phê sữa. Khuấy cho đến khi đường tan hoàn toàn.\n" +
                         "\n" +
-                        "Trang trí (tuỳ chọn): Bạn có thể rắc một ít bột cacao lên trên cốc Café Sữa Nóng để làm điểm nhấn hoặc để tạo hình trang trí.\n" +
+                        "Bước 4: Trang trí (tuỳ chọn): Bạn có thể rắc một ít bột cacao lên trên cốc Café Sữa Nóng để làm điểm nhấn hoặc để tạo hình trang trí.\n" +
                         "\n" +
                         "Thưởng thức: Café Sữa Nóng sẵn sàng để thưởng thức";
 
