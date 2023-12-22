@@ -13,6 +13,18 @@ public class Cake_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cake);
+        Button buttonbanh = findViewById(R.id.back);
+
+        buttonbanh.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick (View view){
+                Intent intent = new Intent(Cake_Activity.this, Trang_MiengActivity.class);
+
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
+                startActivity(intent);
+            }
+        });
         Button cafeSuaButton = findViewById(R.id.Banhcupcake);
         cafeSuaButton.setOnClickListener(new View.OnClickListener() {
             @Override
