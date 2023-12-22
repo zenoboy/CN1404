@@ -71,12 +71,13 @@
                     android:id="@+id/GaKhoNghe"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
-                    android:gravity="center|bottom"
+                    android:layout_marginBottom="12dp"
                     android:background="@drawable/gakho"
+                    android:gravity="center|bottom"
                     android:text="GÀ KHO NGHỆ"
                     android:textColor="#FFFFFF"
-                    android:textSize="25sp"
-                    android:layout_marginBottom="12dp"/>
+                    android:textSize="25sp" />
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/GaTan"
                     android:layout_width="match_parent"
