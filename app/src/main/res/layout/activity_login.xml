@@ -51,7 +51,11 @@
             android:inputType="textPassword"
             android:layout_marginBottom="20dp"/>
     </com.google.android.material.textfield.TextInputLayout>
-
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
     <Button
         android:id="@+id/btn_login"
         android:layout_width="match_parent"
@@ -60,12 +64,13 @@
         android:layout_marginBottom="16dp" />
 
     <TextView
+        android:id="@+id/registerNow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Chưa có tài khoản? Đăng ký ngay!"
         android:textColor="#FFFFFF"
-        android:layout_marginTop="16dp" />
-
+        android:textSize="15dp"
+        android:layout_marginTop="10dp" />
 
 
 </LinearLayout>
