@@ -25,5 +25,30 @@ public class douongactivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button buttonphache = findViewById(R.id.PhaChe);
+
+        buttonphache.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick (View view){
+                Intent intent = new Intent(douongactivity.this, Do_Uong_Pha_CheActivity.class);
+
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
+                startActivity(intent);
+            }
+        });
+        Button buttonsinhto = findViewById(R.id.SinhTo);
+
+        buttonsinhto.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick (View view){
+                Intent intent = new Intent(douongactivity.this, Sinh_To_Activity.class);
+
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
+                startActivity(intent);
+            }
+        });
     }
+
 }

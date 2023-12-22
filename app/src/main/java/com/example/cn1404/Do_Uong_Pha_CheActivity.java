@@ -13,6 +13,18 @@ public class Do_Uong_Pha_CheActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_do_uong_pha_che);
+        Button buttonsinhto = findViewById(R.id.back);
+
+        buttonsinhto.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick (View view){
+                Intent intent = new Intent(Do_Uong_Pha_CheActivity.this, douongactivity.class);
+
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
+                startActivity(intent);
+            }
+        });
         Button cafeSuaButton = findViewById(R.id.CafeSua);
         cafeSuaButton.setOnClickListener(new View.OnClickListener() {
             @Override

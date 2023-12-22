@@ -13,6 +13,18 @@ public class Ice_cream extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ice_cream);
+        Button buttonQuayLai = findViewById(R.id.back);
+
+        buttonQuayLai.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick (View view){
+                Intent intent = new Intent(Ice_cream.this, Trang_MiengActivity.class);
+
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
+                startActivity(intent);
+            }
+        });
 
         Button kemChuoiButton = findViewById(R.id.kemchuoi);
         kemChuoiButton.setOnClickListener(new View.OnClickListener() {

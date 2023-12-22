@@ -71,7 +71,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         buttontrangmien.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this, Ice_cream.class);
+                Intent intent = new Intent(HomeActivity.this, Trang_MiengActivity.class);
                 startActivity(intent);
             }
         });
