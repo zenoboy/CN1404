@@ -73,7 +73,7 @@ public class Mon_Sup_Activity extends AppCompatActivity {
                         "Bước 1: Chuẩn bị lươn:\n" +
                         "\n" +
                         "Rửa sạch lươn và thái thành từng miếng vừa ăn.\n" +
-                        "Bước 12: Chế biến nguyên liệu:\n" +
+                        "Bước 2: Chế biến nguyên liệu:\n" +
                         "\n" +
                         "Xào hành, tỏi, ớt và gừng cho đến khi thơm.\n" +
                         "Thêm củ hành tây và cà rốt vào chảo, xào cho đến khi chúng mềm.\n" +

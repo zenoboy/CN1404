@@ -28,7 +28,50 @@ public class Mon_Bo_Activity extends AppCompatActivity {
         cafeSuaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String recipeInstructions = "Công thức làm Bò Cuộn Phô Mai: \n " +
+                String recipeInstructions = "Công thức làm Bò Cuộn Phô Mai\n" +
+                        "Nguyên liệu:\n" +
+                        "300-400g thịt bò mỏng (loại thịt mềm như thăn, nạc)\n" +
+                        "Phô mai (loại có thể phô mai dài, dễ cuốn)\n" +
+                        "Hành tây\n" +
+                        "Hành tím\n" +
+                        "Ớt chuông (tùy chọn)\n" +
+                        "Muối và tiêu\n" +
+                        "Bột hành, bột tỏi (tùy chọn)\n" +
+                        "Dầu olive hoặc dầu ăn (để chiên)\n" +
+                        "Cách thực hiện:\n" +
+                        "Bước 1: Chuẩn bị nguyên liệu:\n" +
+                        "\n" +
+                        "Thái thịt bò thành từng miếng mỏng và nhỏ hơn để dễ cuốn.\n" +
+                        "Bước 2: Cắt phô mai thành từng thanh dài tương xứng với kích thước của miếng thịt bò.\n" +
+                        "Hành tây và hành tím cắt thành sợi dài và mỏng.\n" +
+                        "Ớt chuông thái lát mỏng nếu bạn sử dụng.\n" +
+                        "Bước 3: Chế biến thịt bò:\n" +
+                        "\n" +
+                        "Ướp thịt bò với muối, tiêu, bột hành và bột tỏi (nếu dùng). Để thịt nghỉ trong khoảng 10-15 phút để gia vị thấm vào thịt.\n" +
+                        "Bước 4: Cuộn bò với phô mai:\n" +
+                        "\n" +
+                        "Đặt một miếng thịt bò xuống mặt phẳng.\n" +
+                        "Đặt thanh phô mai và một ít hành tây, hành tím, và ớt chuông (nếu có) lên trên miếng thịt.\n" +
+                        "Cuộn chặt từ đỉnh xuống dưới, để chặt kín phô mai và nhân bên trong thịt bò.\n" +
+                        "Bước 5: Chiên bò cuộn:\n" +
+                        "\n" +
+                        "Đun nóng dầu trong chảo.\n" +
+                        "Cho bò cuộn vào chảo và chiên đến khi bề mặt thịt bò có màu vàng và phô mai bên trong tan chảy.\n" +
+                        "Bước 6: Trình bày và thưởng thức:\n" +
+                        "\n" +
+                        "Đặt bò cuộn phô mai lên đĩa và trang trí theo sở thích của bạn, có thể kèm theo sốt cà chua hoặc sốt ướp bò nếu muốn. ";
+
+
+                Intent intent = new Intent(Mon_Bo_Activity.this, RecipeDetailActivity.class);
+                intent.putExtra("instructions", recipeInstructions);
+                startActivity(intent);
+            }
+        });
+        Button CapuchinoButton = findViewById(R.id.BoXao);
+        CapuchinoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String recipeInstructions = "Cách làm Bò Xào lá nốt:\n" +
                         "Nguyên liệu:\n" +
                         "\n" +
                         "300g thịt bò, cắt thành sợi mảnh\n" +
@@ -61,18 +104,16 @@ public class Mon_Bo_Activity extends AppCompatActivity {
                         "\n" +
                         "Trước khi tắt bếp, rắc hành lá và trang trí bằng rau sống, ớt theo khẩu vị cá nhân.\n" +
                         "Dùng nóng với cơm trắng.";
-
-
                 Intent intent = new Intent(Mon_Bo_Activity.this, RecipeDetailActivity.class);
                 intent.putExtra("instructions", recipeInstructions);
                 startActivity(intent);
             }
         });
-        Button CapuchinoButton = findViewById(R.id.BoXao);
-        CapuchinoButton.setOnClickListener(new View.OnClickListener() {
+        Button BacSiu = findViewById(R.id.BoSotTieu);
+        BacSiu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String recipeInstructions = "Cách làm Bò Xào lá nốt:\n" +
+                String recipeInstructions = "Công thức làm Bò Sốt Tiêu Đen:\n" +
                         " Nguyên liệu:\n" +
                         "\n" +
                         "500g thịt bò (sườn bò hoặc thịt bò tái), cắt thành sợi mảnh\n" +
@@ -107,42 +148,6 @@ public class Mon_Bo_Activity extends AppCompatActivity {
                         "\n" +
                         "Trước khi tắt bếp, trang trí bữa ăn với rau sống (tùy chọn).\n" +
                         "Dùng nóng với cơm trắng. ";
-                Intent intent = new Intent(Mon_Bo_Activity.this, RecipeDetailActivity.class);
-                intent.putExtra("instructions", recipeInstructions);
-                startActivity(intent);
-            }
-        });
-        Button BacSiu = findViewById(R.id.BoSotTieu);
-        BacSiu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String recipeInstructions = "Công thức làm Bò Sốt Tiêu Đen:\n" +
-                        " Nguyên liệu:\n" +
-                        "\n" +
-                        "1 con gà (hoặc các phần gà mà bạn thích: cánh, đùi, ức, v.v.)\n" +
-                        "1 chén nước mè (me) đen\n" +
-                        "3-4 muỗng canh mật ong\n" +
-                        "2 muỗng canh nước tương\n" +
-                        "1 muỗng canh nước mắm\n" +
-                        "1 muỗng cà phê tiêu\n" +
-                        "1 muỗng canh dầu ăn\n" +
-                        "1 muỗng canh tỏi băm\n" +
-                        "1 muỗng canh gừng băm\n" +
-                        "1/2 chén nước lọc\n" +
-                        "Cách thực hiện:\n" +
-                        "\n" +
-                        "Bước 1 Chuẩn bị gà: Rửa sạch gà và cắt thành các miếng vừa ăn.\n" +
-                        "\n" +
-                        "Bước 2 Trộn gia vị: Trong một tô, trộn chung nước mè, mật ong, nước tương, nước mắm, tiêu, và nước lọc để tạo thành hỗn hợp sốt me.\n" +
-                        "\n" +
-                        "Bước 3 Chế biến gà: Trong một chảo, đun nóng dầu ăn, sau đó chiên gà cho đến khi chúng có màu vàng và chín đều. Hãy chú ý để không làm cháy quá mức.\n" +
-                        "\n" +
-                        "Bước 4 Làm sốt me: Trong một nồi, đun nóng dầu ăn và phi thơm tỏi và gừng băm. Sau đó, thêm hỗn hợp sốt me vào nồi. Khuấy đều và đun sôi.\n" +
-                        "\n" +
-                        "Bước 5 Nấu sốt me: Hạ lửa và để sốt me sôi nhỏ lửa khoảng 5-10 phút cho đến khi nó đặc lại và có độ nhớt.\n" +
-                        "\n" +
-                        "Bước 6 Trang trí và thưởng thức: Gắp gà ra khỏi chảo, đặt lên đĩa và rót sốt me lên trên. Trang trí bằng một ít hành lá hoặc gừng băm. Dùng ấm nóng với cơm trắng.";
-
 
                 openRecipeDetailActivity(recipeInstructions);
             }
